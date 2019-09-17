@@ -1,0 +1,48 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<List<NavigationListItem>>
+@using UmbracoTesting.Models
+
+
+
+
+
+<header id="fh5co-header" role="banner">
+    <div class="container">
+        <div class="header-inner">
+            <!--<h1><i class="sl-icon-energy"></i><a href="/">Lesser</a></h1>-->
+            <img src="~/images/Rayuela_Logotipo-01.png"/>
+            <nav role="navigation">
+                <ul>
+                    @RenderChildItems(Model)
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+
+@helper RenderChildItems(List<NavigationListItem> listItems)
+{
+    if (listItems != null)
+    {
+        foreach (var item in listItems)
+        {
+            <li>
+                @if (!String.IsNullOrEmpty(item.Text))
+                {
+                    @item.Text
+                }
+                else if (item.Link != null)
+                {
+                    <a href="@item.Link.Url" class="@(Umbraco.AssignedContentItem.Url == item.Link.Url ? "active" : null) @(item.HasChildren ? "fh5co-sub-ddown" : null)" target="@item.Link.Target">@item.Link.Text</a>
+                }
+
+                @if (item.HasChildren)
+                {
+                    <ul class="sub-menu">
+                        @RenderChildItems(item.Items)
+                    </ul>
+                }
+            </li>
+        }
+    }
+}

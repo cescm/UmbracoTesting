@@ -1,0 +1,42 @@
+﻿<div id="fh5co-blog-section" class="fh5co-grey-bg-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+                <h2>Our Recent Blog</h2>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <div class="blog-inner">
+                    <a href="#"><img class="img-responsive" src="images/image_4.jpg" alt="Blog"></a>
+                    <div class="desc">
+                        <h3><a href="#">New iPhone 6 Released</a></h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                        <p><a href="#" class="btn btn-primary btn-outline with-arrow">Read More<i class="icon-arrow-right"></i></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="blog-inner">
+                    <a href="#"><img class="img-responsive" src="images/image_5.jpg" alt="Blog"></a>
+                    <div class="desc">
+                        <h3><a href="#">Start your day with a beautiful appearance</a></h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                        <p><a href="#" class="btn btn-primary btn-outline with-arrow">Read More<i class="icon-arrow-right"></i></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="blog-inner">
+                    <a href="#"><img class="img-responsive" src="images/image_6.jpg" alt="Blog"></a>
+                    <div class="desc">
+                        <h3><a href="#">Bookmarksgrove right</a></h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                        <p><a href="#" class="btn btn-primary btn-outline with-arrow">Read More<i class="icon-arrow-right"></i></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
