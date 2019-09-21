@@ -306,6 +306,11 @@
     <Content Include="fonts\index.html" />
     <Content Include="fonts\simple-line-icons\Simple-Line-Icons.svg" />
     <Content Include="Global.asax" />
+    <Content Include="images\banner.jpg" />
+    <Content Include="images\comedor.jpg" />
+    <Content Include="images\descanso.jpg" />
+    <Content Include="images\flores.jpg" />
+    <Content Include="images\grupo.jpg" />
     <Content Include="images\image_1.jpg" />
     <Content Include="images\image_10.jpg" />
     <Content Include="images\image_2.jpg" />
@@ -319,11 +324,15 @@
     <Content Include="images\image_about.jpg" />
     <Content Include="images\IMG-20160901-WA0021.jpg" />
     <Content Include="images\index.html" />
+    <Content Include="images\jardin.jpeg" />
     <Content Include="images\loader.gif" />
     <Content Include="images\loc.png" />
     <Content Include="images\Logotipo-Cenat-1024x473.jpg" />
+    <Content Include="images\navidad.jpg" />
     <Content Include="images\Niños-jugando-descalzos-876x1024.jpg" />
     <Content Include="images\Rayuela_Logotipo-01.png" />
+    <Content Include="images\sabado.jpg" />
+    <Content Include="images\taller.jpg" />
     <Content Include="lesser\about.html" />
     <Content Include="lesser\blog.html" />
     <Content Include="lesser\contact.html" />

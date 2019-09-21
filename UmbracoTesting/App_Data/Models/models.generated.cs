@@ -19,14 +19,14 @@ using Umbraco.ModelsBuilder;
 using Umbraco.ModelsBuilder.Umbraco;
 
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "e49f2c05bf49d991")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "7f5bd6d2c1e99a2a")]
 [assembly:System.Reflection.AssemblyVersion("0.0.0.2")]
 
 namespace Umbraco.Web.PublishedContentModels
 {
 	/// <summary>Home</summary>
 	[PublishedContentModel("home")]
-	public partial class Home : PublishedContentModel
+	public partial class Home : PublishedContentModel, IIntroControls
 	{
 #pragma warning disable 0109 // new is redundant
 		public new const string ModelTypeAlias = "home";
@@ -47,6 +47,15 @@ namespace Umbraco.Web.PublishedContentModels
 		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Home, TValue>> selector)
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// Intro: Enter your introduction text here
+		///</summary>
+		[ImplementPropertyType("intro")]
+		public string Intro
+		{
+			get { return Umbraco.Web.PublishedContentModels.IntroControls.GetIntro(this); }
 		}
 	}
 
@@ -178,6 +187,52 @@ namespace Umbraco.Web.PublishedContentModels
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 		}
+	}
+
+	// Mixin content Type 1074 with alias "introControls"
+	/// <summary>Intro Controls</summary>
+	public partial interface IIntroControls : IPublishedContent
+	{
+		/// <summary>Intro</summary>
+		string Intro { get; }
+	}
+
+	/// <summary>Intro Controls</summary>
+	[PublishedContentModel("introControls")]
+	public partial class IntroControls : PublishedContentModel, IIntroControls
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "introControls";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public IntroControls(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<IntroControls, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// Intro: Enter your introduction text here
+		///</summary>
+		[ImplementPropertyType("intro")]
+		public string Intro
+		{
+			get { return GetIntro(this); }
+		}
+
+		/// <summary>Static getter for Intro</summary>
+		public static string GetIntro(IIntroControls that) { return that.GetPropertyValue<string>("intro"); }
 	}
 
 	/// <summary>Folder</summary>
