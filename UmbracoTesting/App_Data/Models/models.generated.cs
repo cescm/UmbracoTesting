@@ -19,8 +19,8 @@ using Umbraco.ModelsBuilder;
 using Umbraco.ModelsBuilder.Umbraco;
 
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "7f5bd6d2c1e99a2a")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.2")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "7bfa3fae327e550e")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.4")]
 
 namespace Umbraco.Web.PublishedContentModels
 {
@@ -61,7 +61,7 @@ namespace Umbraco.Web.PublishedContentModels
 
 	/// <summary>Blog</summary>
 	[PublishedContentModel("blog")]
-	public partial class Blog : PublishedContentModel
+	public partial class Blog : PublishedContentModel, ITitleSections
 	{
 #pragma warning disable 0109 // new is redundant
 		public new const string ModelTypeAlias = "blog";
@@ -83,11 +83,20 @@ namespace Umbraco.Web.PublishedContentModels
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 		}
+
+		///<summary>
+		/// title: Enter the title of the section
+		///</summary>
+		[ImplementPropertyType("title")]
+		public string Title
+		{
+			get { return Umbraco.Web.PublishedContentModels.TitleSections.GetTitle(this); }
+		}
 	}
 
 	/// <summary>Portfolio</summary>
 	[PublishedContentModel("portfolio")]
-	public partial class Portfolio : PublishedContentModel
+	public partial class Portfolio : PublishedContentModel, ITitleSections
 	{
 #pragma warning disable 0109 // new is redundant
 		public new const string ModelTypeAlias = "portfolio";
@@ -109,11 +118,20 @@ namespace Umbraco.Web.PublishedContentModels
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 		}
+
+		///<summary>
+		/// title: Enter the title of the section
+		///</summary>
+		[ImplementPropertyType("title")]
+		public string Title
+		{
+			get { return Umbraco.Web.PublishedContentModels.TitleSections.GetTitle(this); }
+		}
 	}
 
 	/// <summary>Services</summary>
 	[PublishedContentModel("services")]
-	public partial class Services : PublishedContentModel
+	public partial class Services : PublishedContentModel, ITitleSections
 	{
 #pragma warning disable 0109 // new is redundant
 		public new const string ModelTypeAlias = "services";
@@ -135,11 +153,20 @@ namespace Umbraco.Web.PublishedContentModels
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 		}
+
+		///<summary>
+		/// title: Enter the title of the section
+		///</summary>
+		[ImplementPropertyType("title")]
+		public string Title
+		{
+			get { return Umbraco.Web.PublishedContentModels.TitleSections.GetTitle(this); }
+		}
 	}
 
 	/// <summary>About</summary>
 	[PublishedContentModel("about")]
-	public partial class About : PublishedContentModel
+	public partial class About : PublishedContentModel, ITitleSections
 	{
 #pragma warning disable 0109 // new is redundant
 		public new const string ModelTypeAlias = "about";
@@ -161,11 +188,20 @@ namespace Umbraco.Web.PublishedContentModels
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 		}
+
+		///<summary>
+		/// title: Enter the title of the section
+		///</summary>
+		[ImplementPropertyType("title")]
+		public string Title
+		{
+			get { return Umbraco.Web.PublishedContentModels.TitleSections.GetTitle(this); }
+		}
 	}
 
 	/// <summary>Contact</summary>
 	[PublishedContentModel("contact")]
-	public partial class Contact : PublishedContentModel
+	public partial class Contact : PublishedContentModel, ITitleSections
 	{
 #pragma warning disable 0109 // new is redundant
 		public new const string ModelTypeAlias = "contact";
@@ -186,6 +222,15 @@ namespace Umbraco.Web.PublishedContentModels
 		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Contact, TValue>> selector)
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// title: Enter the title of the section
+		///</summary>
+		[ImplementPropertyType("title")]
+		public string Title
+		{
+			get { return Umbraco.Web.PublishedContentModels.TitleSections.GetTitle(this); }
 		}
 	}
 
@@ -233,6 +278,52 @@ namespace Umbraco.Web.PublishedContentModels
 
 		/// <summary>Static getter for Intro</summary>
 		public static string GetIntro(IIntroControls that) { return that.GetPropertyValue<string>("intro"); }
+	}
+
+	// Mixin content Type 1075 with alias "titleSections"
+	/// <summary>Title Sections</summary>
+	public partial interface ITitleSections : IPublishedContent
+	{
+		/// <summary>title</summary>
+		string Title { get; }
+	}
+
+	/// <summary>Title Sections</summary>
+	[PublishedContentModel("titleSections")]
+	public partial class TitleSections : PublishedContentModel, ITitleSections
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "titleSections";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public TitleSections(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<TitleSections, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// title: Enter the title of the section
+		///</summary>
+		[ImplementPropertyType("title")]
+		public string Title
+		{
+			get { return GetTitle(this); }
+		}
+
+		/// <summary>Static getter for title</summary>
+		public static string GetTitle(ITitleSections that) { return that.GetPropertyValue<string>("title"); }
 	}
 
 	/// <summary>Folder</summary>
