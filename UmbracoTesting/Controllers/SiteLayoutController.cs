@@ -36,11 +36,8 @@ namespace UmbracoTesting.Controllers
         }
 
         
-
-      
-
         /// <summary>
-        /// Finds the home page and gets the navigation structure based on it and it's children
+        /// Finds the home page and gets the navigation structure based on it and it's childrens
         /// </summary>
         /// <returns>A List of NavigationListItems, representing the structure of the site.</returns>
         private List<NavigationListItem> GetNavigationModelFromDatabase()

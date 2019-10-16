@@ -18,16 +18,22 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="about-inner">
+                            
+                            @*
                             <img class="img-responsive" src="/images/jardin.jpeg" alt="About">
                             <h3>Nuestra Historia</h3>
                             <p>Somos un centro de educación infantil jóven, que nace en el año 2017 con el propósito de rellenar ese hueco que existe entre las guarderías de nuestro distrito, con la intención de ir más allá y de hacer cosas que no hacen los demás, como por ejemplo tener un servicio de recogida en el propio centro de estudios de vuestros hijos para dejarlos en la ludoteca.</p>
                             <blockquote>
                                 <p>Somos un equipo jóven, formado especialmente en el cuidado de vuestros hijos y con una gran vocación por lo que hacemos</p>
                             </blockquote>
+                            *@
+                            
+                            @CurrentPage.GetGridHtml("contentGrid", "bootstrap3")
                         </div>
                     </div>
                 </div>
             </div>
+            @* 
             <div class="col-md-4">
                 <aside class="sidebar">
                     <div class="row">
@@ -52,6 +58,7 @@
                     </div>
                 </aside>
             </div>
+            *@
         </div>
     </div>
 </div>

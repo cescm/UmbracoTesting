@@ -1,0 +1,102 @@
+﻿ 2019-10-09 01:57:28,918 [P1204/D2/T135] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2019-10-08 01:57:28
+ 2019-10-09 05:57:28,949 [P1204/D2/T150] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2019-10-08 05:57:28
+ 2019-10-09 09:57:28,965 [P1204/D2/T166] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2019-10-08 09:57:28
+ 2019-10-09 10:56:11,309 [P1204/D2/T159] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Terminating
+ 2019-10-09 10:56:11,309 [P1204/D2/T159] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Waiting for tasks to complete
+ 2019-10-09 10:56:11,325 [P1204/D2/T159] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Tasks completed, terminated
+ 2019-10-09 10:56:11,325 [P1204/D2/T159] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [InstructionProcessing] Terminating
+ 2019-10-09 10:56:11,325 [P1204/D2/T159] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [InstructionProcessing] Waiting for tasks to complete
+ 2019-10-09 10:56:11,325 [P1204/D2/T159] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
+ 2019-10-09 10:56:11,325 [P1204/D2/T159] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
+ 2019-10-09 10:56:11,325 [P1204/D2/T159] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
+ 2019-10-09 10:56:11,340 [P1204/D2/T159] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
+ 2019-10-09 10:56:11,340 [P1204/D2/T159] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
+ 2019-10-09 10:56:11,340 [P1204/D2/T159] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
+ 2019-10-09 10:56:11,340 [P1204/D2/T159] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
+ 2019-10-09 10:56:11,356 [P1204/D2/T37] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [InstructionProcessing] Tasks completed, terminated
+ 2019-10-09 10:56:11,356 [P1204/D2/T41] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
+ 2019-10-09 10:56:11,356 [P1204/D2/T159] INFO  Umbraco.Core.MainDom - Stopping...
+ 2019-10-09 10:56:11,356 [P1204/D2/T122] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
+ 2019-10-09 10:56:11,356 [P1204/D2/T159] INFO  Umbraco.Web.ExamineStartup - Examine shutting down
+ 2019-10-09 10:56:11,387 [P1204/D2/T159] INFO  Umbraco.Web.ExamineStartup - Complete (took 27ms)
+ 2019-10-09 10:56:11,387 [P1204/D2/T159] INFO  Umbraco.Core.MainDom - Released MainDom.
+ 2019-10-09 10:56:11,402 [P1204/D2/T159] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2019-10-09 10:56:11,402 [P1204/D2/T159] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2019-10-09 10:56:11,402 [P1204/D2/T167] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2019-10-09 10:56:11,424 [P1204/D2/T159] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
+ 2019-10-09 10:56:11,424 [P1204/D2/T159] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
+ 2019-10-09 10:56:11,424 [P1204/D2/T43] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
+ 2019-10-09 10:56:11,543 [P1204/D2/T166] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: HostingEnvironment
+
+_shutDownMessage=HostingEnvironment initiated shutdown
+HostingEnvironment originó el cierre
+
+_shutDownStack=   en System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   en System.Environment.get_StackTrace()
+   en System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   en System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   en System.Web.Hosting.PipelineRuntime.StopProcessing()
+ 2019-10-09 18:34:17,027 [P3008/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.15.3 application starting on SYNOVMW10-UMBRA
+ 2019-10-09 18:34:17,109 [P3008/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2019-10-09 18:34:17,168 [P3008/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 66ms)
+ 2019-10-09 18:34:17,373 [P3008/D2/T1] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2019-10-09 18:34:17,389 [P3008/D2/T1] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2019-10-09 18:34:17,389 [P3008/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-10-09 18:34:17,607 [P3008/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 206ms)
+ 2019-10-09 18:34:17,607 [P3008/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IApplicationStartupHandler
+ 2019-10-09 18:34:17,607 [P3008/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IApplicationStartupHandler (took 4ms)
+ 2019-10-09 18:34:17,731 [P3008/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-10-09 18:34:17,747 [P3008/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 2ms)
+ 2019-10-09 18:34:17,747 [P3008/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2019-10-09 18:34:17,747 [P3008/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 1ms)
+ 2019-10-09 18:34:17,747 [P3008/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-10-09 18:34:17,747 [P3008/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 1ms)
+ 2019-10-09 18:34:17,747 [P3008/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2019-10-09 18:34:17,747 [P3008/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 6ms)
+ 2019-10-09 18:34:17,780 [P3008/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-10-09 18:34:17,780 [P3008/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 1ms)
+ 2019-10-09 18:34:17,780 [P3008/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Mvc.SurfaceController
+ 2019-10-09 18:34:17,780 [P3008/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Mvc.SurfaceController (took 1ms)
+ 2019-10-09 18:34:17,780 [P3008/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-10-09 18:34:17,780 [P3008/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 1ms)
+ 2019-10-09 18:34:17,780 [P3008/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.WebApi.UmbracoApiController
+ 2019-10-09 18:34:17,780 [P3008/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.WebApi.UmbracoApiController (took 4ms)
+ 2019-10-09 18:34:28,626 [P3008/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2019-10-09 18:34:29,623 [P3008/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2019-10-09 18:34:30,246 [P3008/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2019-10-09 18:34:30,246 [P3008/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2019-10-09 18:34:30,512 [P3008/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 13967ms)
+ 2019-10-09 18:34:31,449 [P3008/D2/T8] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - New ApplicationUrl detected: http://192.168.1.100:8008/umbraco
+ 2019-10-09 18:34:31,468 [P3008/D2/T8] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://192.168.1.100:8008/umbraco (UmbracoModule request)
+ 2019-10-09 18:55:15,138 [P3008/D2/T31] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating
+ 2019-10-09 18:55:15,138 [P3008/D2/T31] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Waiting for tasks to complete
+ 2019-10-09 18:55:15,138 [P3008/D2/T31] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks completed, terminated
+ 2019-10-09 18:55:15,138 [P3008/D2/T31] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating
+ 2019-10-09 18:55:15,138 [P3008/D2/T31] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Waiting for tasks to complete
+ 2019-10-09 18:55:15,138 [P3008/D2/T31] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks completed, terminated
+ 2019-10-09 18:55:15,138 [P3008/D2/T31] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating
+ 2019-10-09 18:55:15,138 [P3008/D2/T31] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Waiting for tasks to complete
+ 2019-10-09 18:55:15,138 [P3008/D2/T31] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks completed, terminated
+ 2019-10-09 18:55:15,203 [P3008/D2/T31] INFO  Umbraco.Core.MainDom - Stopping...
+ 2019-10-09 18:55:15,217 [P3008/D2/T31] INFO  Umbraco.Web.ExamineStartup - Examine shutting down
+ 2019-10-09 18:55:15,287 [P3008/D2/T31] INFO  Umbraco.Web.ExamineStartup - Complete (took 59ms)
+ 2019-10-09 18:55:15,287 [P3008/D2/T31] INFO  Umbraco.Core.MainDom - Released MainDom.
+ 2019-10-09 18:55:15,287 [P3008/D2/T31] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Terminating
+ 2019-10-09 18:55:15,287 [P3008/D2/T31] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Waiting for tasks to complete
+ 2019-10-09 18:55:15,287 [P3008/D2/T31] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [HealthCheckNotifier] Tasks completed, terminated
+ 2019-10-09 18:55:15,295 [P3008/D2/T31] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating
+ 2019-10-09 18:55:15,295 [P3008/D2/T31] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Waiting for tasks to complete
+ 2019-10-09 18:55:15,295 [P3008/D2/T31] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks completed, terminated
+ 2019-10-09 18:55:15,325 [P3008/D2/T31] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating
+ 2019-10-09 18:55:15,325 [P3008/D2/T31] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Waiting for tasks to complete
+ 2019-10-09 18:55:15,325 [P3008/D2/T31] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks completed, terminated
+ 2019-10-09 18:55:15,346 [P3008/D2/T30] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: HostingEnvironment
+
+_shutDownMessage=HostingEnvironment initiated shutdown
+HostingEnvironment originó el cierre
+
+_shutDownStack=   en System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   en System.Environment.get_StackTrace()
+   en System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   en System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   en System.Web.Hosting.PipelineRuntime.StopProcessing()

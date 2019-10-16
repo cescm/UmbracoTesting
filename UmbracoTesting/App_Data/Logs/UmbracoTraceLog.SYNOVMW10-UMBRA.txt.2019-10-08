@@ -1,0 +1,104 @@
+﻿ 2019-10-08 05:56:12,309 [P1204/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.15.3 application starting on SYNOVMW10-UMBRA
+ 2019-10-08 05:56:12,497 [P1204/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2019-10-08 05:56:12,559 [P1204/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 65ms)
+ 2019-10-08 05:56:12,747 [P1204/D2/T1] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2019-10-08 05:56:12,747 [P1204/D2/T1] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2019-10-08 05:56:12,762 [P1204/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-10-08 05:56:13,045 [P1204/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 284ms)
+ 2019-10-08 05:56:13,045 [P1204/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IApplicationStartupHandler
+ 2019-10-08 05:56:13,045 [P1204/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IApplicationStartupHandler (took 5ms)
+ 2019-10-08 05:56:13,209 [P1204/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-10-08 05:56:13,209 [P1204/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 2ms)
+ 2019-10-08 05:56:13,209 [P1204/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2019-10-08 05:56:13,209 [P1204/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 1ms)
+ 2019-10-08 05:56:13,215 [P1204/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-10-08 05:56:13,215 [P1204/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 1ms)
+ 2019-10-08 05:56:13,215 [P1204/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2019-10-08 05:56:13,215 [P1204/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 7ms)
+ 2019-10-08 05:56:13,247 [P1204/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-10-08 05:56:13,247 [P1204/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 1ms)
+ 2019-10-08 05:56:13,247 [P1204/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Mvc.SurfaceController
+ 2019-10-08 05:56:13,247 [P1204/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Mvc.SurfaceController (took 2ms)
+ 2019-10-08 05:56:13,262 [P1204/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-10-08 05:56:13,262 [P1204/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 1ms)
+ 2019-10-08 05:56:13,262 [P1204/D2/T1] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.WebApi.UmbracoApiController
+ 2019-10-08 05:56:13,262 [P1204/D2/T1] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.WebApi.UmbracoApiController (took 3ms)
+ 2019-10-08 05:56:24,544 [P1204/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2019-10-08 05:56:25,278 [P1204/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2019-10-08 05:56:25,700 [P1204/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2019-10-08 05:56:25,715 [P1204/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2019-10-08 05:56:25,934 [P1204/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 13986ms)
+ 2019-10-08 05:56:26,763 [P1204/D2/T11] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - New ApplicationUrl detected: http://192.168.1.100:8008/umbraco
+ 2019-10-08 05:56:26,763 [P1204/D2/T12] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://192.168.1.100:8008/umbraco (UmbracoModule request)
+ 2019-10-08 05:56:26,763 [P1204/D2/T11] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://192.168.1.100:8008/umbraco (UmbracoModule request)
+ 2019-10-08 05:56:28,638 [P1204/D2/T11] INFO  umbraco.content - Load Xml from file...
+ 2019-10-08 05:56:28,654 [P1204/D2/T11] INFO  umbraco.content - Loaded Xml from file.
+ 2019-10-08 05:56:33,700 [P1204/D2/T12] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-10-08 05:56:33,700 [P1204/D2/T12] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 1ms)
+ 2019-10-08 05:56:33,700 [P1204/D2/T12] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IParameterEditor
+ 2019-10-08 05:56:33,718 [P1204/D2/T12] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IParameterEditor (took 4ms)
+ 2019-10-08 05:56:36,295 [P1204/D2/T12] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type UmbracoTesting.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2019-10-08 05:56:36,295 [P1204/D2/T11] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type home matches a locally declared controller of type UmbracoTesting.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2019-10-08 05:57:28,684 [P1204/D2/T11] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2019-10-08 05:57:28,684 [P1204/D2/T11] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 3ms)
+ 2019-10-08 05:57:28,684 [P1204/D2/T11] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2019-10-08 05:57:28,684 [P1204/D2/T11] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper (took 7ms)
+ 2019-10-08 05:57:28,844 [P1204/D2/T12] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2019-10-07 05:57:28
+ 2019-10-08 09:57:28,872 [P1204/D2/T158] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2019-10-07 09:57:28
+ 2019-10-08 13:57:28,887 [P1204/D2/T151] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2019-10-07 13:57:28
+ 2019-10-08 17:57:28,903 [P1204/D2/T107] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2019-10-07 17:57:28
+ 2019-10-08 21:04:53,076 [P1204/D2/T180] ERROR Umbraco.Web.Strategies.ServerRegistrationEventHandler - Failed to update server record in database.
+System.Data.SqlClient.SqlException (0x80131904): Se agotó el tiempo de espera de ejecución. El período de tiempo de espera transcurrió antes de la finalización de la operación o el servidor no responde. ---> System.ComponentModel.Win32Exception (0x80004005): Tiempo de espera de la operación de espera agotado
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   en System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   en System.Data.SqlClient.SqlInternalTransaction.Commit()
+   en System.Data.SqlClient.SqlTransaction.Commit()
+   en Umbraco.Core.Persistence.Database.CleanupTransaction()
+   en Umbraco.Core.Persistence.Database.CompleteTransaction()
+   en Umbraco.Core.Scoping.Scope.DisposeLastScope()
+   en Umbraco.Core.Scoping.Scope.Dispose()
+   en Umbraco.Core.Persistence.UnitOfWork.ScopeUnitOfWork.DisposeResources()
+   en Umbraco.Core.DisposableObjectSlim.Dispose(Boolean disposing)
+   en Umbraco.Core.DisposableObjectSlim.Dispose()
+   en Umbraco.Core.ObjectExtensions.DisposeIfDisposable(Object input)
+   en Umbraco.Core.DisposableObjectSlim.Dispose(Boolean disposing)
+   en Umbraco.Core.DisposableObjectSlim.Dispose()
+   en Umbraco.Core.Persistence.LockingRepository`1.WithWriteLocked(Action`1 action, Boolean autoCommit)
+   en Umbraco.Core.Services.ServerRegistrationService.TouchServer(String serverAddress, String serverIdentity, TimeSpan staleTimeout)
+   en Umbraco.Web.Strategies.ServerRegistrationEventHandler.TouchServerTask.PerformRun()
+ClientConnectionId:93794a5a-a6b5-4490-8100-251f69ae00e8
+Error Number:-2,State:0,Class:11
+ 2019-10-08 21:05:27,327 [P1204/D2/T174] ERROR Umbraco.Core.Persistence.UmbracoDatabase - Exception (5dfdd84e).
+System.InvalidOperationException: Operación no válida, se ha terminado la conexión.
+   en System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   en System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   en System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   en System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   en System.Data.SqlClient.TdsParserStateObject.TryPeekByte(Byte& value)
+   en System.Data.SqlClient.SqlDataReader.TrySetMetaData(_SqlMetaDataSet metaData, Boolean moreInfo)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en Umbraco.Core.Persistence.PetaPocoCommandExtensions.<>c__DisplayClass5_0.<ExecuteReaderWithRetry>b__0()
+   en Umbraco.Core.Persistence.FaultHandling.RetryPolicy.ExecuteAction[TResult](Func`1 func)
+   en Umbraco.Core.Persistence.Database.<Query>d__74`1.MoveNext()
+ 2019-10-08 21:05:27,344 [P1204/D2/T174] ERROR Umbraco.Web.BatchedDatabaseServerMessenger+InstructionProcessing - Failed (will repeat).
+System.InvalidOperationException: SqlTransaction se completó; ya no se puede utilizar.
+   en System.Data.SqlClient.SqlTransaction.ZombieCheck()
+   en System.Data.SqlClient.SqlTransaction.Rollback()
+   en Umbraco.Core.Persistence.Database.CleanupTransaction()
+   en Umbraco.Core.Persistence.Database.AbortTransaction()
+   en Umbraco.Core.Scoping.Scope.DisposeLastScope()
+   en Umbraco.Core.Scoping.Scope.Dispose()
+   en Umbraco.Web.BatchedDatabaseServerMessenger.InstructionProcessing.TryPerformRun()
+   en Umbraco.Web.BatchedDatabaseServerMessenger.InstructionProcessing.PerformRun()
+ 2019-10-08 21:57:28,904 [P1204/D2/T125] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2019-10-07 21:57:28

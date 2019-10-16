@@ -8,7 +8,7 @@ using  Umbraco.Web;
 using  Umbraco.ModelsBuilder;
 using  Umbraco.ModelsBuilder.Umbraco;
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "7bfa3fae327e550e")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "1d1621733485a082")]
 [assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
 
 
@@ -101,6 +101,15 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
+		/// SubTitle: Enter the subtitle
+		///</summary>
+		[ImplementPropertyType("subTitle")]
+		public IHtmlString SubTitle
+		{
+			get { return Umbraco.Web.PublishedContentModels.TitleSections.GetSubTitle(this); }
+		}
+
+		///<summary>
 		/// title: Enter the title of the section
 		///</summary>
 		[ImplementPropertyType("title")]
@@ -133,6 +142,15 @@ namespace Umbraco.Web.PublishedContentModels
 		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Portfolio, TValue>> selector)
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// SubTitle: Enter the subtitle
+		///</summary>
+		[ImplementPropertyType("subTitle")]
+		public IHtmlString SubTitle
+		{
+			get { return Umbraco.Web.PublishedContentModels.TitleSections.GetSubTitle(this); }
 		}
 
 		///<summary>
@@ -171,6 +189,15 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
+		/// SubTitle: Enter the subtitle
+		///</summary>
+		[ImplementPropertyType("subTitle")]
+		public IHtmlString SubTitle
+		{
+			get { return Umbraco.Web.PublishedContentModels.TitleSections.GetSubTitle(this); }
+		}
+
+		///<summary>
 		/// title: Enter the title of the section
 		///</summary>
 		[ImplementPropertyType("title")]
@@ -182,7 +209,7 @@ namespace Umbraco.Web.PublishedContentModels
 
 	/// <summary>About</summary>
 	[PublishedContentModel("about")]
-	public partial class About : PublishedContentModel, ITitleSections
+	public partial class About : PublishedContentModel, IBasicContentControls, ITitleSections
 	{
 #pragma warning disable 0109 // new is redundant
 		public new const string ModelTypeAlias = "about";
@@ -203,6 +230,24 @@ namespace Umbraco.Web.PublishedContentModels
 		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<About, TValue>> selector)
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// Content Grid: Enter the content for the page
+		///</summary>
+		[ImplementPropertyType("contentGrid")]
+		public Newtonsoft.Json.Linq.JToken ContentGrid
+		{
+			get { return Umbraco.Web.PublishedContentModels.BasicContentControls.GetContentGrid(this); }
+		}
+
+		///<summary>
+		/// SubTitle: Enter the subtitle
+		///</summary>
+		[ImplementPropertyType("subTitle")]
+		public IHtmlString SubTitle
+		{
+			get { return Umbraco.Web.PublishedContentModels.TitleSections.GetSubTitle(this); }
 		}
 
 		///<summary>
@@ -238,6 +283,15 @@ namespace Umbraco.Web.PublishedContentModels
 		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Contact, TValue>> selector)
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// SubTitle: Enter the subtitle
+		///</summary>
+		[ImplementPropertyType("subTitle")]
+		public IHtmlString SubTitle
+		{
+			get { return Umbraco.Web.PublishedContentModels.TitleSections.GetSubTitle(this); }
 		}
 
 		///<summary>
@@ -300,6 +354,9 @@ namespace Umbraco.Web.PublishedContentModels
 	/// <summary>Title Sections</summary>
 	public partial interface ITitleSections : IPublishedContent
 	{
+		/// <summary>SubTitle</summary>
+		IHtmlString SubTitle { get; }
+
 		/// <summary>title</summary>
 		string Title { get; }
 	}
@@ -330,6 +387,18 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
+		/// SubTitle: Enter the subtitle
+		///</summary>
+		[ImplementPropertyType("subTitle")]
+		public IHtmlString SubTitle
+		{
+			get { return GetSubTitle(this); }
+		}
+
+		/// <summary>Static getter for SubTitle</summary>
+		public static IHtmlString GetSubTitle(ITitleSections that) { return that.GetPropertyValue<IHtmlString>("subTitle"); }
+
+		///<summary>
 		/// title: Enter the title of the section
 		///</summary>
 		[ImplementPropertyType("title")]
@@ -340,6 +409,52 @@ namespace Umbraco.Web.PublishedContentModels
 
 		/// <summary>Static getter for title</summary>
 		public static string GetTitle(ITitleSections that) { return that.GetPropertyValue<string>("title"); }
+	}
+
+	// Mixin content Type 1078 with alias "basicContentControls"
+	/// <summary>Basic Content Controls</summary>
+	public partial interface IBasicContentControls : IPublishedContent
+	{
+		/// <summary>Content Grid</summary>
+		Newtonsoft.Json.Linq.JToken ContentGrid { get; }
+	}
+
+	/// <summary>Basic Content Controls</summary>
+	[PublishedContentModel("basicContentControls")]
+	public partial class BasicContentControls : PublishedContentModel, IBasicContentControls
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "basicContentControls";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public BasicContentControls(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<BasicContentControls, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// Content Grid: Enter the content for the page
+		///</summary>
+		[ImplementPropertyType("contentGrid")]
+		public Newtonsoft.Json.Linq.JToken ContentGrid
+		{
+			get { return GetContentGrid(this); }
+		}
+
+		/// <summary>Static getter for Content Grid</summary>
+		public static Newtonsoft.Json.Linq.JToken GetContentGrid(IBasicContentControls that) { return that.GetPropertyValue<Newtonsoft.Json.Linq.JToken>("contentGrid"); }
 	}
 
 	/// <summary>Folder</summary>
